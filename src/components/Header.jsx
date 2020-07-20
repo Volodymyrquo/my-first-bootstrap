@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from './logo192.png';
-import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Contacts from '../pages/Contacts';
 import About from '../pages/About';
@@ -20,7 +20,7 @@ const Header = () => {
                             className="d-inline-bock align-top"
                             alt="Logo"
                         />
-                        React site
+                        <span>React site</span>
                 </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nar" />
                     <Navbar.Collapse id="responsive-navbar-nar">
@@ -44,12 +44,12 @@ const Header = () => {
                 </Container>
             </Navbar>
             <Router>
-<Switch>
-<Route exact path="/" component={Home}/>
-<Route exact path="/about" component={About}/>
-<Route exact path="/contacts" component={Contacts}/>
-<Route exact path="/blog" component={Blog}/>
-</Switch>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contacts" component={Contacts} />
+                    <Route exact path="/blog" component={Blog} />
+                </Switch>
             </Router>
         </>
     );
