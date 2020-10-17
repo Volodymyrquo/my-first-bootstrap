@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from './logo192.png';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Contacts from '../pages/Contacts';
 import About from '../pages/About';
